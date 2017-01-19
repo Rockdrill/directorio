@@ -2,7 +2,7 @@
 
 $db    = new Conexion();
 $query = "
-SELECT empresa,area,cargo FROM personal  WHERE ndocumento='".$_GET['n']."'";
+SELECT empresa,area,cargo FROM personal  WHERE ndocumento='".$_GET['n']."' AND estado=1";
 $result = $db->query($query);
  ?>
 
@@ -11,7 +11,7 @@ $result = $db->query($query);
  		<thead>
  			<tr class="active">
  				<th>Empresa</th>
- 				<th>Área</th>
+ 				<th>Área / Contrato </th>
  				<th>Cargo</th>
  			</tr>
  		</thead>

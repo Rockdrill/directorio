@@ -14,11 +14,9 @@ $result = $db->query($query);
  				<th>Nombres</th>
  				<th>Apellidos</th>
  				<th>DNI</th>
- 				<th>Fotocheck</th>
  				<th>Dirección</th>
  				<th>Empresa</th>
- 				<th>Área</th>
- 				<th>Local</th>
+ 				<th>Área / Contrato</th>
  				<th>Cargo</th>
  				<th>Acciones</th>
  						
@@ -34,11 +32,9 @@ $result = $db->query($query);
 		<td><?php echo $row['nombres']; ?></td>
 		<td><?php echo $row['apellidos']; ?></td>
 		<td><?php echo $row['ndocumento']; ?></td>
-		<td><?php echo $row['fotocheck']; ?></td>
 		<td><?php echo $row['direccion']; ?></td>
 		<td><?php echo $row['empresa']; ?></td>
 		<td><?php echo $row['area']; ?></td>
-		<td><?php echo $row['local']; ?></td>
 		<td><?php echo $row['cargo']; ?></td>
 		<td style="text-align: center;" >
 		<a href="<?php echo PATH; ?>pages/editar?n=<?php echo $row['ndocumento'] ?>">
